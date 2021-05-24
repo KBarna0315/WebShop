@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /*elvileg ezzel lesz a legbiztosabban látható*/
+}
+body{
+    height: 100vh;
+    font: 1.6rem Arial;
+    margin:0;
+}
+a{
+    text-decoration: none;
+
+}
+a.hover{
+    color:coral;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas:
+            'header'
+            'main'
+            'footer';
+    grid-template-columns: 1fr;
+    grid-auto-rows: 5rem 1fr 5rem;
+}
+header{
+    grid-area:  header;
+    background-color: darkgray;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+header a{
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+header a:hover{
+    color: coral;
+}
+.cime{
+    font-size: 3rem;
+}
+footer{
+    background-color: #203040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+/*Termékek csse ide fog jönni*/
+.termekek{ /*Termékek egy sorba kéne, hogy legyenek*/
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.termekek li{
+    flex:0 1 30rem;
+    margin: 1rem 1rem 0;
+    height: 42rem;
+    border-top: 0.2rem #e0e0e0e0 solid;
+}
+.termek{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /*Csinál egy kis helyet a kép meg a dolgai között*/
+    height: 100%;
+
+}
+.termek image{
+    max-height: 26rem;
+    max-width: 22rem;
+    margin-top: 2rem;
+}
+.termek-nev{
+    line-height: 2.2rem;
+}
+.termék-markaja{
+    font-size: 1.2rem;
+    color: darkgray;
+}
+.termek-ara{
+    font-size: 2rem;
+}
