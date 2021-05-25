@@ -23,7 +23,7 @@ const HomeScreen = { //ez olyan mint egy obejktum
             </div>
             <div class="termek-ara">
                 <a href="/#/termek/1">
-                    ${termek.ar}
+                    ${termek.ar} Ft
                 </a>
             </div>
             </div>

@@ -93,3 +93,11 @@ footer{
 .termek-ara{
     font-size: 2rem;
 }
+.navbar{
+    padding: 5px;
+    margin: 12px;
+}
+.akciok{
+    margin: 0;
+    padding: 0;
+}
